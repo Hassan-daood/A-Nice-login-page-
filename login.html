@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        }
+    .form{
+       padding-bottom: 40px;
+       padding-top: 30px;
+       margin-top:120px;
+       margin-right: 450px;
+       margin-left:450px;
+       border-radius: 30px;
+       background-color:rgba(250, 250, 250, 0.1);
+       border:2px solid rgba(255, 254, 255, 0.4);
+       border-width: 2px;
+       max-width:400px;
+       width:80%;
+       box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+       backdrop-filter: blur(3px);
+       font-family: 'calibri';
+    }
+  .div{
+    text-align: center;
+  }
+  .signin{
+    font-weight:bold;
+    margin:5px;
+    border:none;
+    border-radius:27px;
+    background-color: rgb(51, 51, 54);
+    color:white;
+    padding:8px 30px;
+    cursor: pointer;
+    ;}
+label{
+    color:rgb(255, 255, 255);
+}
+.forgot{
+    color:rgb(0, 0, 0);
+    text-decoration: none;;
+}
+.forgot:hover{
+text-decoration: underline;
+}
+.forgot:active{
+    color:rgb(14, 1, 199);
+}
+.remember-forgot{
+    display:flex;
+    justify-content:space-between;
+    margin:0 50px;
+}
+.login input{
+    border-radius: 21px;
+    border:none;
+    width:300px;
+    padding:10px;
+    font-size: 15px;
+}
+.bx{
+color:rgb(66, 66, 75);
+margin-left: 163px;
+font-size: 80px;
+padding-bottom: 15px;
+}
+
+    </style>
+</head>
+<body style="background-image: url('/background.jpg'); background-size:cover; background-repeat:no-repeat;"></body>
+
+    <form class="form">
+        <i class='bx bx-user-circle'  ></i> 
+        <div class="div">
+        <div class="login">    
+        <input type="email" name="email" id="email" placeholder="Username"> 
+        <br><br>
+        <br>
+        <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+        <br>
+        <div class="remember-forgot">
+        <label><input class="remember" type="checkbox">Remember me</label>
+        <a href="#" class="forgot">forgot password?</a>
+        </div>
+        <br>
+        <button class="signin" type="submit">SignIn</button>
+        <button class="signin" type="submit">SignUp</button>
+        </div>
+    </form>
+</body>
+</html>
